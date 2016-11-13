@@ -1,3 +1,12 @@
+//Урок 2 Перевести полное `Имя Отчество Фамилия` в `Фамилия И. О.`
+//import { chekFio } from './lesson2/fio.js';
+//
+//app.get('/fio', (req, res) => {
+//  let result = chekFio(req.query.fullname);
+//  res.send(result._v);
+//});
+
+
 async function chekFio(queryFio){
   let reg = /\s{0,100}([\wа-яА-ЯёЁó']+)?\s{0,100}([\wа-яА-ЯёЁó']+)?\s{0,100}([\wа-яА-ЯёЁó']+)?\s{0,100}([\wа-яА-ЯёЁó]+)?/i;
   let regName = /./;

@@ -1,5 +1,13 @@
 import _ from 'lodash';
 
+//--------------------------------------------------
+//Урок 2 задача спарсить покемонов с сайта pokeapi.co
+//import { showPokemons } from './lesson2/pokemon.js';
+//
+//app.get('/lesson2pokemon', async (req, res) => {
+//  showPokemons(res);
+//});
+
 async function  getPokemons (url, i = 0) {
   //console.log('getPokemons ', url, i);
   const response = await fetch(url);
