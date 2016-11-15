@@ -6,6 +6,7 @@ import Promise from 'bluebird';
 import _ from 'lodash';
 import bodyParser from 'body-parser';
 
+
 //--------------------------------------------------
 //подключение expree и использование CORS
 const app = express();
@@ -25,8 +26,6 @@ fetch(pcUrl)
     console.log('Чтото пошло не так:', err);
   });
 
-
-
 	function checkUrl(obj, pole) {
 		let res;
 		console.log(obj.__proto__.hasOwnProperty(pole));
@@ -40,9 +39,6 @@ fetch(pcUrl)
 
 		return res;
 	}
-
-
-
 
 app.get(/.*/, async (req, res) => {
 
@@ -75,7 +71,6 @@ for(let cur in hdd) {
 	let result = await req.originalUrl.split(/\//);
 	let newarr = [];
 
-
 	for(var cur in result) {
 		
 		if(result[cur] !== '') {
@@ -106,7 +101,6 @@ for(let cur in hdd) {
 }
 
 });
-
 //--------------------------------------------------
 //слушаем порт 3000
 app.listen(3000, () => {
