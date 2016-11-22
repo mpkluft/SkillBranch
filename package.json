@@ -35,6 +35,7 @@
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-jwt": "^5.1.0",
+    "hsl-to-hex": "^1.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.6.7"
