@@ -25,7 +25,6 @@ app.get('/clear', isAdmin, async (req, res) => {
   await User.remove({});
   await Pet.remove({});
   return res.send('OK');
-
 });
 
 app.get('/users', async (req, res) => {
