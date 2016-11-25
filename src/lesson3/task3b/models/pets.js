@@ -2,14 +2,13 @@ import mongoose from 'mongoose';
 import _ from 'lodash';
 const { Schema } = mongoose;
 
-const PetSchema = new Schema({
+
+const PetSchema = new Schema ({
   id: Number,
   userId: Number,
   type: String,
   color: String,
   age: Number,
-}, {
-  timestamps: true,
 });
 
 PetSchema.methods.toJSON = function () {
